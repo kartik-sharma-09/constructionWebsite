@@ -15,18 +15,18 @@ function Hero() {
           playsInline
         >
           <source
-            src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4"
+            src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4"
             type="video/mp4"
           />
           <source
-            src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.webm"
+            src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.webm"
             type="video/webm"
           />
           {/* Fallback content for browsers that don't support video */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('https://images.pexels.com/photos/162539/architecture-building-construction-work-162539.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`
+              backgroundImage: `url('https://images.pexels.com/photos/1117452/pexels-photo-1117452.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`
             }}
           />
         </video>

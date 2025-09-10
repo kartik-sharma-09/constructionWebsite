@@ -5,13 +5,35 @@ import { ArrowRight, Award, Users, Calendar } from 'lucide-react';
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
-      {/* Background Image Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{
-          backgroundImage: `url('https://images.pexels.com/photos/162539/architecture-building-construction-work-162539.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`
-        }}
-      />
+      {/* Background Video */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto transform -translate-x-1/2 -translate-y-1/2 object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.webm"
+            type="video/webm"
+          />
+          {/* Fallback content for browsers that don't support video */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('https://images.pexels.com/photos/162539/architecture-building-construction-work-162539.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`
+            }}
+          />
+        </video>
+        
+        {/* Video Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
